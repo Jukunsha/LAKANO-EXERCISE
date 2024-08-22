@@ -91,7 +91,7 @@ For these questions, a suggestion will be to use the web app [Arrows](https://ar
 1. Your first exercise will be to model a generic graph representing product nodes with their product relationships.
    <center>
         <div style="display:flex;flex-direction:column;padding:0 20%">
-            <img src='LAKANO_MODEL_1.png' />
+            <img src='LAKANO MODEL_1.png' />
             <span>answer1: Product nodes </span>
         </div>
     </center>
