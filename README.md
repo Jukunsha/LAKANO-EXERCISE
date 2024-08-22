@@ -94,31 +94,28 @@ For these questions, a suggestion will be to use the web app [Arrows](https://ar
         <div style="display:flex;flex-direction:column;padding:0 20%">
             <img src='LAKANO MODEL_1.png' />
             <p><i> - I created only one node Bodyboard, but i could have created both Classic bodyboard and Performance bodyboard, either, i could have created a "Type" property on this node, but with the code CBD and PBD it is already easy to retrieve the kind of bodyboard.</i></p>
-    <p><i>- The property "Manufactured" is a Boolean, so we can distinguish what is manufactred or not.</i></p>
+            <p><i>- The bodyboard components (Nose, Sides, Stringer, Skin) are linked to the node Bodyboard, and the node "Core" is also considered as a component. The Glue, Soft Foam and Hard Foam are linked to the core node as it is used to make it.</i></p>
+    <p><i>- The property "Manufactured" added to the components node is a Boolean, so we can distinguish what is manufactred or not.</i></p>
         </div>
     </center>
-
-    ```txt
-    
-    ```
 
 2. Now please add the machine nodes and edges to this representation.
 
    <center>
         <div style="display:flex;flex-direction:column;padding:0 20%">
             <img src='LAKANO_MODEL_2.png' />
-            <span><i>answer2: Product and Machine nodes</i></span>
         </div>
     </center>
+    <p><i>I created two top level nodes MBA & MCA (with label machines) linked to the bodyboard node and core node, so it is easier to read and for maintenance</i></p>
     
 3. Finally, we now want to extend the graph to purchased items supplier traceability. For that, we know that Core Purchased items are supplied by the company `CORETECH` and Bodyboard Purchased items are supplied by the company `SKIN&SKIM`. Add supplier nodes and edges to your representation.
 
    <center>
         <div style="display:flex;flex-direction:column;padding:0 20%">
             <img src='LAKANO_MODEL_3.png' />
-            <span><i>answer3: Suppliers nodes added </i></span>
         </div>
     </center>
+    <p><i> Added the two suppliers nodes as they supplies two different kind of components, same reason as for the machines.</i></p>
 
 #### 2. Queries
 
