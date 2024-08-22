@@ -102,7 +102,7 @@ For these questions, a suggestion will be to use the web app [Arrows](https://ar
    <center>
         <div style="display:flex;flex-direction:column;padding:0 20%">
             <img src='LAKANO_MODEL_2.png' />
-            <span>answer2: Product and Machine nodes </span>
+            <span><i>answer2: Product and Machine nodes</i></span>
         </div>
     </center>
     
@@ -111,7 +111,7 @@ For these questions, a suggestion will be to use the web app [Arrows](https://ar
    <center>
         <div style="display:flex;flex-direction:column;padding:0 20%">
             <img src='LAKANO_MODEL_3.png' />
-            <span>answer2: Product and Machine nodes </span>
+            <span><i>answer3: Suppliers nodes added </i></span>
         </div>
     </center>
 
