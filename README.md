@@ -179,6 +179,16 @@ RETURN bodyboard.uniqueID AS BodyboardID;
 
 1. Imagine that the LAKANO company is going global and opens two other factories in Nazare (Portugal) and Tahiti (France). How can you tune the graph to be able to track the factory location?
 
+```txt
+I didn't implement the factories into AuraDB instance, but we could tune the graph this way :
+```
+<center>
+        <div style="display:flex;flex-direction:column;padding:0 20%">
+            <img src='LAKANO_MODEL_4.png' />
+            <span><i>answer3: Suppliers nodes added </i></span>
+        </div>
+</center>
+
 2. We're producing more and more and so are facing issues when searching inside the graph. What could be solutions to optimize the search efficiency?
 
 3. The quality team is asking to have easy access to production properties. For example, when the core is assembled, the glue is heated at a given temperature. The max of this temperature is saved. What could be your solution to embed such properties into the graph and what could be a possible query to retrieve the core glue temperature of a given module?
