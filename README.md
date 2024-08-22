@@ -196,4 +196,32 @@ RETURN bodyboard.uniqueID AS BodyboardID;
 ```
 2. We're producing more and more and so are facing issues when searching inside the graph. What could be solutions to optimize the search efficiency?
 
+```txt
+There are many solutions..
+- The first one and the easiest way is to create indexes on the most frequently searched properties:
+CREATE INDEX FOR (n:Bodyboard) ON (n.uniqueID);
+CREATE INDEX FOR (n:Component) ON (n.name);
+CREATE INDEX FOR (n:Machine) ON (n.uniqueid);
+
+- We could use Pagination with SKIP and LIMIT
+
+- Using labelling strategies to reduce the number of nodes neo4j needs to traverse
+
+- Batch Processing using CALL apoc.periodic.iterate (if APOC is availablet) to process large datasets in smaller, manageable batches.
+
+... look at hardware side ?
+```
+
 3. The quality team is asking to have easy access to production properties. For example, when the core is assembled, the glue is heated at a given temperature. The max of this temperature is saved. What could be your solution to embed such properties into the graph and what could be a possible query to retrieve the core glue temperature of a given module?
+
+```txt
+First, we could extend the Graph Model with Production Properties by attaching the maxTemperature property to the IS_MADE_OF relationship between the Core and Glue.
+
+MATCH (core:Component {name: 'Core'})-[r:IS_MADE_OF]->(glue:Component {name: 'Glue'})
+SET r.maxTemperature = 180  // Example value
+
+Then the query to retrieve the maxTemperature should be this :
+
+MATCH (bodyboard:Bodyboard {uniqueID: 'PBDMBA120240409001'})-[:IS_MADE_OF]->(core:Component {name: 'Core'})-[r:IS_MADE_OF]->(glue:Component {name: 'Glue'})
+RETURN r.maxTemperature AS MaxGlueTemperature;
+```
