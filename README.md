@@ -132,7 +132,12 @@ RETURN
   COLLECT(DISTINCT coreCpts.name) as core_components
 ```
 
-2. Write a query to count how many items have been produced using the `MBA1` machine.
+2. Write a query to count how many items have been produced using the `MBA1` machine. 
+
+```txt
+MATCH (item)-[:PRODUCED_BY]->(machine:Machine {code: 'MBA1'})
+RETURN COUNT(item) AS items_produced_by_MBA1;
+```
 
 3. Write a trigger to set the date of production as a node property [Optional]. Then write the same query as question 2 but add "and during the month of April".
 
