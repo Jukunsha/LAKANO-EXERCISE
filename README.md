@@ -119,6 +119,14 @@ For these questions, a suggestion will be to use the web app [Arrows](https://ar
 
 In this part, if you could generate some mock data to a local or online Neo4j instance, that will help you to query your graph to validate your requests. Nevertheless, this generation is optional.
 
+```txt
+You can check the instance i created on auraDB
+
+uri : neo4j+s://3ab36c63.databases.neo4j.io
+user : neo4j
+password : wJCvkHjEnH5IesMdXBfbhB6qD0TuzUloWPIe_CE_pmY
+```
+
 All code parts from this section should be written in Cypher.
 
 1. Write a query to retrieve all components of a given bodyboard.
