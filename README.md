@@ -123,12 +123,14 @@ All code parts from this section should be written in Cypher.
 
 1. Write a query to retrieve all components of a given bodyboard.
 
-```MATCH (bodyboard:Bodyboard {uniqueID: 'PBDMBA120240101001'})-[:IS_MADE_OF]->(bodyboardCpts:Component)
-```OPTIONAL MATCH (bodyboardCpts:Component {name: 'Core'})-[:IS_MADE_OF]->(coreCpts:Component)
-```RETURN 
-  ```bodyboard.uniqueID as BodyboardID,
-  ```COLLECT(DISTINCT bodyboardCpts.name) as bodyboard_components, 
-  ```COLLECT(DISTINCT coreCpts.name) as core_components
+```txt
+MATCH (bodyboard:Bodyboard {uniqueID: 'PBDMBA120240101001'})-[:IS_MADE_OF]->(bodyboardCpts:Component)
+OPTIONAL MATCH (bodyboardCpts:Component {name: 'Core'})-[:IS_MADE_OF]->(coreCpts:Component)
+RETURN 
+  bodyboard.uniqueID as BodyboardID,
+  COLLECT(DISTINCT bodyboardCpts.name) as bodyboard_components, 
+  COLLECT(DISTINCT coreCpts.name) as core_components
+```
 
 2. Write a query to count how many items have been produced using the `MBA1` machine.
 
