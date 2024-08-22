@@ -89,6 +89,7 @@ An example for the first Performance bodyboard produced of the year on machine M
 For these questions, a suggestion will be to use the web app [Arrows](https://arrows.app/).
 
 1. Your first exercise will be to model a generic graph representing product nodes with their product relationships.
+   
    <center>
         <div style="display:flex;flex-direction:column;padding:0 20%">
             <img src='LAKANO MODEL_1.png' />
@@ -96,9 +97,16 @@ For these questions, a suggestion will be to use the web app [Arrows](https://ar
         </div>
     </center>
 
-3. Now please add the machine nodes and edges to this representation.
+2. Now please add the machine nodes and edges to this representation.
 
-4. Finally, we now want to extend the graph to purchased items supplier traceability. For that, we know that Core Purchased items are supplied by the company `CORETECH` and Bodyboard Purchased items are supplied by the company `SKIN&SKIM`. Add supplier nodes and edges to your representation.
+   <center>
+        <div style="display:flex;flex-direction:column;padding:0 20%">
+            <img src='LAKANO_MODEL_2.png' />
+            <span>answer2: Product and Machine nodes </span>
+        </div>
+    </center>
+    
+3. Finally, we now want to extend the graph to purchased items supplier traceability. For that, we know that Core Purchased items are supplied by the company `CORETECH` and Bodyboard Purchased items are supplied by the company `SKIN&SKIM`. Add supplier nodes and edges to your representation.
 
 #### 2. Queries
 
