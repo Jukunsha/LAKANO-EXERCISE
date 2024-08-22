@@ -185,7 +185,6 @@ I didn't implement the factories into AuraDB instance, but we could tune the gra
 <center>
         <div style="display:flex;flex-direction:column;padding:0 20%">
             <img src='LAKANO_MODEL_4.png' />
-            <span><i>answer3: Suppliers nodes added </i></span>
         </div>
 </center>
 
