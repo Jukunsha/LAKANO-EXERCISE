@@ -169,6 +169,12 @@ RETURN bodyboard.uniqueID AS BodyboardID, stringerCount;
 ```
 5. We figured out that glue used was defective for some classic bodyboards. Here is the ID: `CGLXXXX20240101023`. We want you to output bodyboard IDs made from this glue.
 
+```txt
+MATCH (core:Component)-[:IS_MADE_OF]->(component:Component {uniqueID: 'CGLXXXX20240101023'})
+MATCH (bodyboard:Bodyboard)-[:IS_MADE_OF]->(core)
+RETURN bodyboard.uniqueID AS BodyboardID;
+```
+
 #### 3. Going further
 
 1. Imagine that the LAKANO company is going global and opens two other factories in Nazare (Portugal) and Tahiti (France). How can you tune the graph to be able to track the factory location?
