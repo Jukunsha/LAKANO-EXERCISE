@@ -93,7 +93,7 @@ For these questions, a suggestion will be to use the web app [Arrows](https://ar
    <center>
         <div style="display:flex;flex-direction:column;padding:0 20%">
             <img src='LAKANO MODEL_1.png' />
-            <span><b> answer1: Product nodes and relationship with the components nodes. The property "Manufactured" is a Boolean, so we can distinguish what is manufactred or not.</b></span>
+            <span><i> answer1: Product nodes and relationship with the components nodes. The property "Manufactured" is a Boolean, so we can distinguish what is manufactred or not.</i></span>
         </div>
     </center>
 
