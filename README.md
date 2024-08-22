@@ -188,6 +188,12 @@ I didn't implement the factories into AuraDB instance, but we could tune the gra
         </div>
 </center>
 
+```txt
+Then, we could find all bodyboards produced by machines located in a specific factory, by doing this :
+
+MATCH (bodyboard:Bodyboard)-[:PRODUCED_BY]->(machine:Machine)-[:LOCATED_IN]->(factory:Factory {name: 'Nazare Factory'})
+RETURN bodyboard.uniqueID AS BodyboardID;
+```
 2. We're producing more and more and so are facing issues when searching inside the graph. What could be solutions to optimize the search efficiency?
 
 3. The quality team is asking to have easy access to production properties. For example, when the core is assembled, the glue is heated at a given temperature. The max of this temperature is saved. What could be your solution to embed such properties into the graph and what could be a possible query to retrieve the core glue temperature of a given module?
