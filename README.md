@@ -6,7 +6,7 @@ The aim of this exercise is to explore an example that is not so far from our da
 
 <center>
     <div style="display:flex;flex-direction:column;padding:0 20%">
-        <img src='./images/bodyboard.png' />
+        <img src='bodyboard.png' />
         <span>Fig1: Bodyboard Schema </span>
     </div>
 </center>
