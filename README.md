@@ -89,7 +89,7 @@ An example for the first Performance bodyboard produced of the year on machine M
 For these questions, a suggestion will be to use the web app [Arrows](https://arrows.app/).
 
 1. Your first exercise will be to model a generic graph representing product nodes with their product relationships.
-   !yellow answer1: Product nodes and relationship with the components nodes. The property "Manufactured" is a Boolean, so we can distinguish what is manufactred or not.
+   <span style="background-color: yellow;"> answer1: Product nodes and relationship with the components nodes. The property "Manufactured" is a Boolean, so we can distinguish what is manufactred or not.</span>
    <center>
         <div style="display:flex;flex-direction:column;padding:0 20%">
             <img src='LAKANO MODEL_1.png' />
