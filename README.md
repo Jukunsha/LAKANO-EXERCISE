@@ -141,6 +141,22 @@ RETURN COUNT(item) AS items_produced_by_MBA1;
 
 3. Write a trigger to set the date of production as a node property [Optional]. Then write the same query as question 2 but add "and during the month of April".
 
+```txt
+I can't install APOC plugin on my AuraDB instance, so i was not able to create the trigger, but we could imagine something like that :
+
+CALL apoc.trigger.add(
+  'setProductionDate',
+  'UNWIND $createdBodyboard AS n
+   SET n.productionDate = date()',
+  {phase: 'after'}
+);
+
+Below, the query listing the items produced by machine MBA1 during the month of April :
+
+MATCH (item)-[:PRODUCED_BY]->(machine:Machine {code: 'MBA1'})
+WHERE item.productionDate >= date('2024-04-01') AND item.productionDate < date('2024-05-01')
+RETURN COUNT(item) AS items_produced_by_MBA1_in_April;
+```
 4. Write a query to verify that all performance bodyboards are composed of two stringers.
 
 5. We figured out that glue used was defective for some classic bodyboards. Here is the ID: `CGLXXXX20240101023`. We want you to output bodyboard IDs made from this glue.
