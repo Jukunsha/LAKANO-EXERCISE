@@ -93,13 +93,13 @@ For these questions, a suggestion will be to use the web app [Arrows](https://ar
    <center>
         <div style="display:flex;flex-direction:column;padding:0 20%">
             <img src='LAKANO MODEL_1.png' />
-            <span><i> answer1: .</i></span>
+            <span><i> - I created only one node Bodyboard, but i could have created both Classic bodyboard and Performance bodyboard, either, i could have created a "Type" property on this node, but with the code CBD and PBD it is already easy to retrieve the kind of bodyboard.
+    - The property "Manufactured" is a Boolean, so we can distinguish what is manufactred or not.</i></span>
         </div>
     </center>
 
     ```txt
-    - I created only one node Bodyboard, but i could have created both Classic bodyboard and Performance bodyboard, either, i could have created a "Type" property on this node, but with the code CBD and PBD it is already easy to retrieve the kind of bodyboard.
-    - The property "Manufactured" is a Boolean, so we can distinguish what is manufactred or not.
+    
     ```
 
 2. Now please add the machine nodes and edges to this representation.
