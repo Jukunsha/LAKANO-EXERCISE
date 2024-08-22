@@ -97,7 +97,7 @@ For these questions, a suggestion will be to use the web app [Arrows](https://ar
         </div>
     </center>
 
-1. Now please add the machine nodes and edges to this representation.
+2. Now please add the machine nodes and edges to this representation.
 
    <center>
         <div style="display:flex;flex-direction:column;padding:0 20%">
@@ -106,7 +106,14 @@ For these questions, a suggestion will be to use the web app [Arrows](https://ar
         </div>
     </center>
     
-2. Finally, we now want to extend the graph to purchased items supplier traceability. For that, we know that Core Purchased items are supplied by the company `CORETECH` and Bodyboard Purchased items are supplied by the company `SKIN&SKIM`. Add supplier nodes and edges to your representation.
+3. Finally, we now want to extend the graph to purchased items supplier traceability. For that, we know that Core Purchased items are supplied by the company `CORETECH` and Bodyboard Purchased items are supplied by the company `SKIN&SKIM`. Add supplier nodes and edges to your representation.
+
+   <center>
+        <div style="display:flex;flex-direction:column;padding:0 20%">
+            <img src='LAKANO_MODEL_3.png' />
+            <span>answer2: Product and Machine nodes </span>
+        </div>
+    </center>
 
 #### 2. Queries
 
