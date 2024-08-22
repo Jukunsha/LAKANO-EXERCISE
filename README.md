@@ -159,6 +159,14 @@ RETURN COUNT(item) AS items_produced_by_MBA1_in_April;
 ```
 4. Write a query to verify that all performance bodyboards are composed of two stringers.
 
+```txt
+In my instance, the PBD is composed of only one stringer. But the query should be this:
+
+MATCH (bodyboard:Bodyboard {code: 'PBD'})-[:IS_MADE_OF]->(stringer:Component {name: 'Stringer'})
+WITH bodyboard, COUNT(stringer) AS stringerCount
+WHERE stringerCount <> 2
+RETURN bodyboard.uniqueID AS BodyboardID, stringerCount;
+```
 5. We figured out that glue used was defective for some classic bodyboards. Here is the ID: `CGLXXXX20240101023`. We want you to output bodyboard IDs made from this glue.
 
 #### 3. Going further
